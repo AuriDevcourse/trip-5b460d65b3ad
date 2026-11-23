@@ -271,6 +271,13 @@
 .wd{border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center}.wd .w{font-size:13px;color:var(--mute)}.wd .t{font-weight:700;font-size:17px;margin:4px 0}.wd .s{font-size:11.5px;color:var(--mute);min-height:14px}
 @media(max-width:860px){.mp .mpgrid{grid-template-columns:minmax(0,1fr)}.mp .mpmaps,.mp .mppanel{min-width:0}.card.mp{padding:20px}.mptabs button{font-size:13px;padding:8px 12px}.wxrow{grid-template-columns:repeat(3,1fr)}.mpmap .cn{font-size:32px}.mpmap .cs{font-size:21px}}
 /*/MPCSS*/
+/*MUSTCSS*/
+.mnote{background:#fbf3ee;border:1px solid #ecd2c0;border-radius:20px;padding:18px 22px;margin:0 0 16px;line-height:1.5}
+.ckg.must{grid-column:1/-1;border:2px solid #b4532a;background:#fffaf6}
+.ckg.must .ck{columns:2;column-gap:32px}
+.ckg.must .ck li{break-inside:avoid}
+@media(max-width:860px){.ckg.must .ck{columns:1}}
+/*/MUSTCSS*/
 </style>
 </head>
 <body>
@@ -567,7 +574,42 @@
   </div>
 
   <h2>Before you go<span class="prog" id="ckProg"></span></h2>
-  <div class="chk">
+  <!--MUSTNOTE--><div class="mnote"><b>The trip in numbers:</b> Tue 24 – Mon 30 Nov = <b>7 days, 6 nights</b>. Night 1 Radisson Kaunas, nights 2–6 probably at your brother’s in Šiauliai (not confirmed). Cold: Kaunas +2° / −1° on Tue, down to −1° / −5° by the weekend. Daylight 08:10–16:10. Cabin bags only, so wear the heavy winter things on the plane.</div><div class="chk">
+  <div class="ckg must"><h3><div class="ic"><svg class="i"><use href="#alert"/></svg></div>MUST NOT FORGET</h3><ul class="ck">
+        <li><label><input type="checkbox" data-k="id"><span>ID card or passport for BOTH of you</span></label></li>
+<li><label><input type="checkbox" data-k="ehic"><span>EU health card in the wallet</span></label></li>
+        <li><label><input type="checkbox" data-k="ryan"><span>Boarding passes saved on the phone (you checked in), plus the booking email</span></label></li>
+        <li><label><input type="checkbox" data-k="pu_eur"><span>Cards (Revolut and Nordea) and EUR cash, about €100–150</span></label></li>
+        <li><label><input type="checkbox" data-k="chg"><span>Phone, charger cable and a power bank, all charged tonight</span></label></li>
+        <li><label><input type="checkbox" data-k="pu_meds"><span>Medicines and prescriptions, glasses or contacts</span></label></li>
+        <li><label><input type="checkbox" data-k="gift"><span>Gift for the niece (birthday Sat 28) and something for the hosts</span></label></li>
+        <li><label><input type="checkbox" data-k="pu_monica"><span>For Monica: the “MAd Kulor” sauce she asked for. A bottle over 100 ml cannot go through security in a cabin bag: check the size first</span></label></li>
+        <li><label><input type="checkbox" data-k="pu_prot"><span>For Sigis: the proteins he asked for. Powder is heavy and counts against the 10 kg: weigh the bag. Bars are easier</span></label></li>
+
+        </ul></div>
+  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#coat"/></svg></div>Clothes · 7 days, about −5° to +2°, per person</h3><ul class="ck">
+        <li><label><input type="checkbox" data-k="warm"><span>WEAR on the plane, do not pack: winter coat, warm boots with grip, hat, gloves, scarf</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_sw"><span>2 warm sweaters or fleeces</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_th"><span>2 thermal base layers (top and bottom), cold days in Šiauliai feel like −6 to −9°</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_ts"><span>3 long-sleeve tops or t-shirts to layer</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_tr"><span>2 trousers or jeans</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_ud"><span>7 pairs of underwear and 7 pairs of socks (2 thick wool). Or 4 each and wash at your brother's</span></label></li>
+        <li><label><input type="checkbox" data-k="cl_nice"><span>1 smart-casual outfit for the niece's birthday on Sat 28</span></label></li>
+
+        <li><label><input type="checkbox" data-k="pk_pj"><span>Pyjamas or sleepwear, and slippers if you like them</span></label></li>
+        </ul></div>
+  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#bag"/></svg></div>Pack</h3><ul class="ck">
+        <li><label><input type="checkbox" data-k="bag"><span>Cabin bags only. Priority and cabin bags means, as I know it, a small bag 40×20×25 and a 10 kg bag 55×40×20 each: check your booking</span></label></li>
+        <li><label><input type="checkbox" data-k="pk_tox"><span>Toiletries, each 100 ml or less, in a clear bag. Razor, earplugs, toothbrush, deodorant</span></label></li>
+        <li><label><input type="checkbox" data-k="pk_air"><span>AirPods, and the cable for your watch or anything else that charges</span></label></li>
+        <li><label><input type="checkbox" data-k="pk_ref"><span>Booking reference in your Ryanair email, hotel confirmation in your email: save both offline</span></label></li>
+        </ul></div>
+  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#tag"/></svg></div>Pick up before you fly</h3><ul class="ck">
+<li><label><input type="checkbox" data-k="pu_snack"><span>Snacks for the flight and the first evening, from a supermarket, not the airport</span></label></li>
+<li><label><input type="checkbox" data-k="pu_dk"><span>Something Danish for your brother's household: chocolate, snacks, beer</span></label></li>
+        <li><label><input type="checkbox" data-k="pu_cash2"><span>Cash from a Revolut ATM if you have not got EUR yet, one big withdrawal rather than several</span></label></li>
+        </ul></div>
+
   <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#clock"/></svg></div>This week</h3><ul class="ck">
         
         
@@ -575,37 +617,11 @@
         <li><label><input type="checkbox" data-k="shi"><span>Around Fri 20 Nov: buy the train tickets, Wed 25 down and Mon 30 up (the morning train). Confirm the real times first</span></label></li>
         <li><label><input type="checkbox" data-k="drv"><span>If Driveo: make an account, upload the licence, ask about winter tyres and a later Mon return</span></label></li>
         </ul></div>
-  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#bag"/></svg></div>Pick up before you fly</h3><ul class="ck">
-        <li><label><input type="checkbox" data-k="pu_eur"><span>EUR cash, about €100–150 for buses, taxis and snacks (or load it on Revolut)</span></label></li>
-        <li><label><input type="checkbox" data-k="pu_snack"><span>Snacks for the flight and the first evening, from a supermarket, not the airport</span></label></li>
-        <li><label><input type="checkbox" data-k="pu_dk"><span>Something Danish for your brother's household: chocolate, snacks, beer</span></label></li>
-        <li><label><input type="checkbox" data-k="pu_monica"><span>For Monica: the “MAd Kulor” sauce she asked for (check the exact name or brand with her)</span></label></li>
-        <li><label><input type="checkbox" data-k="pu_prot"><span>For Sigis: the proteins he asked for (powder or bars? how many? ask him)</span></label></li>
-        <li><label><input type="checkbox" data-k="pu_meds"><span>Medicines and prescriptions, if any</span></label></li>
-        </ul></div>
-  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#doc"/></svg></div>Documents</h3><ul class="ck">
-        <li><label><input type="checkbox" data-k="id"><span>ID or passport valid for both of you</span></label></li>
-        <li><label><input type="checkbox" data-k="ehic"><span>EU health card in the wallet</span></label></li>
-        <li><label><input type="checkbox" data-k="ins"><span>Travel insurance checked (card or home policy)</span></label></li>
-        <li><label><input type="checkbox" data-k="ryan"><span>Ryanair: check in online, boarding passes on the phone</span></label></li>
-        </ul></div>
+  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#doc"/></svg></div>Documents</h3><ul class="ck"><li><label><input type="checkbox" data-k="ins"><span>Travel insurance checked (card or home policy)</span></label></li></ul></div>
   <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#phone2"/></svg></div>Phone</h3><ul class="ck">
         <li><label><input type="checkbox" data-k="apps"><span>Apps: Bolt, LTG Link tickets, Driveo if a car</span></label></li>
         <li><label><input type="checkbox" data-k="map"><span>Offline map of Kaunas and Šiauliai</span></label></li>
         <li><label><input type="checkbox" data-k="roam"><span>Danish SIM works in the EU, data on, check before leaving</span></label></li>
-        </ul></div>
-  <div class="ckg"><h3><div class="ic"><svg class="i"><use href="#coat"/></svg></div>Pack</h3><ul class="ck">
-        <li><label><input type="checkbox" data-k="bag"><span>Cabin bags only, check the size</span></label></li>
-        <li><label><input type="checkbox" data-k="warm"><span>Warm layers and shoes with grip, days are short and it can ice over</span></label></li>
-        <li><label><input type="checkbox" data-k="chg"><span>Chargers and a power bank</span></label></li>
-        <li><label><input type="checkbox" data-k="pk_gh"><span>Gloves and a hat</span></label></li>
-        <li><label><input type="checkbox" data-k="pk_air"><span>AirPods, glasses or contacts, razor, earplugs</span></label></li>
-        <li><label><input type="checkbox" data-k="pk_tox"><span>Toiletries, each 100 ml or less, in a clear bag</span></label></li>
-        <li><label><input type="checkbox" data-k="pk_pj"><span>Pyjamas and enough socks and underwear for 7 days (or laundry at your brother's)</span></label></li>
-
-        <li><label><input type="checkbox" data-k="pk_ref"><span>Booking reference in your Ryanair email and the boarding passes saved offline on the phone</span></label></li>
-        
-        <li><label><input type="checkbox" data-k="gift"><span>Gift for the niece and for the hosts</span></label></li>
         </ul></div>
   
   
